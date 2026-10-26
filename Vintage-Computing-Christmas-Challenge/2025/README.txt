@@ -1,0 +1,1 @@
+https://logiker.com/Vintage-Computing-Christmas-Challenge-2025?utm_source=chatgpt.com
