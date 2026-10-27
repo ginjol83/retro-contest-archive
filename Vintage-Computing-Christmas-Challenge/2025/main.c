@@ -1,20 +1,28 @@
 #include <stdio.h>
+
+const char *d[] = {
+	" ",
+	"          *",
+    	"        * * *",
+    	"         ***",
+    	"   * * *  *  * * *",
+    	"    **  * * *  **",
+	"   ***   ***   ***",
+	"      *   *   *",
+	"       *  *  *",
+	"  *  *  * * *  *  *", 
+	"   *  *  ***  *  *",
+	" *******************"
+};
+
 int main(){
-/*
-const char c1[22]="   *     *     *   \n";
-    const char c2[22]="  * *   * *   * *  \n";
-    const char c3[22]=" *   * *   * *   * \n";
-    const char c4[22]="*     *     *     *\n";
-    const char c5[22]="   *     *     *   ";
-    printf("%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",c1,c2,c3,c4,c3,c2, c1,c2,c3,c4,c3,c2, c1,c2,c3,c4,c3,c2, c5);
-*/
-printf("\n");
-printf("     *      \n");
-printf("      *      \n");
-printf(" *  *  *    \n");
-printf("  *  *  ***\n");
-printf("*******************\n");
-printf("  *  *  ***\n");
-printf(" *  *  *\n");
-    return 0;
+	unsigned char i;
+
+	for (i = 0; i < 11; i++) {
+		printf("%s\n", d[i]);
+	}
+	for (i = 11; i > 0; i--) {
+		printf("%s\n", d[i]);
+	}
+	return 0;
 }
